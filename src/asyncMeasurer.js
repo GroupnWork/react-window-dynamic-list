@@ -24,7 +24,8 @@ export const createMeasureLayer = debug => {
   if (!debug) {
     container.style = containerStyle;
   }
-  document.body.appendChild(container);
+  const root = document.querySelector('#root');
+  root.appendChild(container);
   return container;
 };
 
